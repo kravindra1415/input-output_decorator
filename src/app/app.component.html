@@ -1,0 +1,12 @@
+<!-- access the property(name) of the app component in the selector of child component-->
+<!-- <app-hello [name]="name"></app-hello> -->
+
+<p>Product Status {{ productStatus }}</p>
+
+<app-hello
+  *ngFor="let product of products"
+  [product]="product"
+  (status)="onStatus($event)"
+></app-hello>
+
+<!-- <app-hello (message)="getMessage($event)"></app-hello> -->

@@ -1,0 +1,10 @@
+<p>{{ name }}</p>
+<p>
+  {{ product.id }}
+  {{ product.name }}
+  {{ product.price }}
+  <button (click)="isActive(true)" [disabled]="enabled">Enable</button>&nbsp;
+  <button (click)="isActive(false)" [disabled]="disabled">Disable</button>
+</p>
+
+<!-- <button (click)="setMessage('hello')">Message</button> -->
